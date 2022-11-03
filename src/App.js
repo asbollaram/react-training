@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FunComponent from './functionComponet/FunComponent';
+import ClassComponent from './classComponent/ClassComponent';
+import FuntionToclassComponent from './FunctionToclassComponent';
+import MethodInClass from './ClassinMethod';
 
 function App() {
+  const hi = 'Hello';
+  const world = 'World';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MethodInClass />
+      <FuntionToclassComponent />
+      <FunComponent name="Hello, React props" role="UI react props" />
+      <ClassComponent />
+      ----------------
+      <br />
+      {hi}
+      <br />
+      {world}
     </div>
   );
 }
